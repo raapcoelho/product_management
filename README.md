@@ -26,3 +26,6 @@ Para iniciar a aplicação, você pode usar o seguinte comando:
    ```shell
    php -S localhost:8081
    ```
+
+## Pré-visualização
+http://rafaelcoelho.dev.br/product_management/
