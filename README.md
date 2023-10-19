@@ -2,6 +2,8 @@
 
 Este é um projeto criado com o propósito de estudo.
 
+**Status do Projeto**: Em Desenvolvimento
+
 ## Pré-requisitos
 
 - PHP 8
