@@ -28,4 +28,4 @@ Para iniciar a aplicação, você pode usar o seguinte comando:
    ```
 
 ## Pré-visualização
-http://rafaelcoelho.dev.br/product_management/
+https://rafaelcoelho.dev.br/product_management/
