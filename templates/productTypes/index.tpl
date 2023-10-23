@@ -8,25 +8,17 @@
             <tr>
                 <th scope="col">ID</th>
                 <th scope="col">Nome do Produto</th>
-                <th scope="col">Preço</th>
+                <th scope="col">Taxa</th>
             </tr>
         </thead>
         <tbody>
+            {foreach $data as $item}
             <tr>
-                <th scope="row">1</th>
-                <td>Produto A</td>
-                <td>R$ 50.00</td>
+                <td>{$item.id}</td>
+                <td>{$item.name}</td>
+                <td>{$item.tax_rate} %</td>
             </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>Produto B</td>
-                <td>R$ 45.00</td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td>Produto C</td>
-                <td>R$ 60.00</td>
-            </tr>
+            {/foreach}
         </tbody>
     </table>
 </div>

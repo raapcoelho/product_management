@@ -8,18 +8,18 @@
 
 <div class="container mt-4">
     <h1 class="text-center">Cadastrar Tipo</h1>
-    <form class="form">
+    <form class="form" action="?action=storeProductType" method="POST">
         <div class="form-group">
-            <label for="type">Tipo do Produto</label>
-            <input type="text" class="form-control" id="type" placeholder="Digite o tipo do produto">
+            <label for="name">Tipo do Produto</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Digite o tipo do produto">
         </div>
         <div class="form-group">
             <label for="description">Descrição do Produto</label>
-            <input type="text" class="form-control" id="description" placeholder="Digite a descrição do produto">
+            <input type="text" class="form-control" id="description" name="description" placeholder="Digite a descrição do produto">
         </div>
         <div class="form-group">
-            <label for="price">Valor do imposto em porcentagem</label>
-            <input type="text" class="form-control" id="price" placeholder="Valor do imposto em porcentagem">
+            <label for="tax_rate">Valor do imposto em porcentagem</label>
+            <input type="numeric" class="form-control" id="tax_rate" name="tax_rate" placeholder="Valor do imposto em porcentagem">
         </div>
         <button type="submit" class="btn btn-primary mt-4">Cadastrar</button>
     </form>

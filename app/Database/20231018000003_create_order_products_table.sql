@@ -4,7 +4,10 @@ create table if not exists order_products(
     product_id int,
     name varchar(255),
     price DECIMAL(10, 2),
-    tax_rate DECIMAL(5, 4),
-    created_at dateTime,
-    updated_at dateTime
+    tax_rate DECIMAL(10, 2),
+    quantity int,
+    total_tax DECIMAL(10, 2),
+    total DECIMAL(10, 2),
+    created_at dateTime default now(),
+    updated_at dateTime default now()
 );

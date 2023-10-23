@@ -25,10 +25,10 @@
                     <a class="nav-link" href="index.php?action=products">Listar Produtos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.php?action=createType">Cadastrar Tipo</a>
+                    <a class="nav-link" href="index.php?action=createProductType">Cadastrar Tipo</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.php?action=types">Listar Tipos</a>
+                    <a class="nav-link" href="index.php?action=productTypes">Listar Tipos</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="index.php?action=createOrder">Fazer Venda</a>

@@ -16,9 +16,7 @@ class Controller{
 
 				$smarty = new Smarty;
 		
-				foreach ($data as $key => $value) {
-					$smarty->assign($key, $value);
-				}
+				$smarty->assign('data', $data);
 		
 				
 
