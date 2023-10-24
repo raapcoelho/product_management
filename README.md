@@ -11,7 +11,7 @@ Para começar, siga os passos abaixo:
 
 ### Docker
 
-Tempo médio de instalação: 1 minuto
+Tempo médio de instalação: 3 minutos
 
 Copie o repositório para sua máquina e execute o seguinte comando para iniciar em contêineres Docker:
 
@@ -27,6 +27,8 @@ Este é um projeto criado com o propósito de estudo.
 
 ## Instalação Manual
 
+Tempo médio de instalação: 3 minutos
+
 Siga estas seguintes etapas:
 
 1. Abra o arquivo `.env` dentro da pasta `app` e altere as configurações de acordo com o seu banco de dados.
@@ -39,10 +41,10 @@ Siga estas seguintes etapas:
    DB_CHARSET='utf8'
    ```
 
-2. Execute o script de instalação do banco de dados:
+2. Ainda dentro da pasta `app` execute o comando:
 
    ```shell
-   php app/install.php
+   php install.php -t app
    ```
 
 ## Se preferir, importe o banco manualmente
@@ -51,10 +53,10 @@ O arquivo sql está com nome "product_management.sql"
 
 ## Executando
 
-Para iniciar a aplicação, você pode usar o seguinte comando:
+Para iniciar a aplicação, você pode usar o seguinte comando dentro da pasta `app`:
 
    ```shell
-   php -S localhost:8081 -t app
+   php -S localhost:8081
    ```
 
 ## Pré-visualização
