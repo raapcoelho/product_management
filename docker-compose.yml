@@ -1,0 +1,57 @@
+version: '3'
+
+volumes:
+  mariadb:
+    driver: local
+
+networks:
+    db:
+        driver: bridge
+
+services:
+  mariadb:
+    image: mariadb:10.6
+    container_name: MariaDB
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 123
+      MYSQL_DATABASE:  sales_db
+      MYSQL_USER:  sales_user
+      MYSQL_PASSWORD: 123
+    expose:
+      - "40000"
+    ports:
+      - "40000:3306"
+    volumes:
+      - mariadb:/var/lib/mysql
+    networks:
+      db:
+              
+  phpmyadmin:
+    image: phpmyadmin
+    container_name: phpMyAdmin
+    restart: always
+    expose:
+      - "40001"
+    ports:
+      - "40001:80"
+    environment:
+      - PMA_HOST=mariadb
+      - PMA_PORT=3306 
+    networks:
+      db:
+
+  php-app:
+    container_name: APP
+    depends_on:
+      - mariadb
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8082:8082"
+    volumes:
+      - ./app:/var/www/html
+    networks:
+      db:
