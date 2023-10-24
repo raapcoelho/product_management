@@ -41,10 +41,10 @@ Siga estas seguintes etapas:
    DB_CHARSET='utf8'
    ```
 
-2. Ainda dentro da pasta `app` execute o comando:
+2. Ainda dentro da pasta `app` execute o comando abaixo para instalar o banco de dados:
 
    ```shell
-   php install.php -t app
+   php install.php
    ```
 
 ## Se preferir, importe o banco manualmente
